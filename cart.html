@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Store</title>
+    <!-- bootstrap and css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            background-color:#0f292917;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+
+
+<body >
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="images/logo.png" alt="Cloth Store"  width="55">
+            <a class="navbar-brand" href="index.html">CLOTH STORE</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Mens Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Womens Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Kids Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">SignIn/SignUp </a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html"><i class="bi bi-cart-dash"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<body>
+
+<div class="container">
+    <div class="cart-container">
+        <h3 class="text-center mb-4">🛒 Your Shopping Cart</h3>
+
+        <!-- Cart Item 1 -->
+        <div class="row align-items-center border-bottom py-3">
+            <div class="col-md-2 text-center cart-item">
+                <img src="images/product1.png" alt="Product">
+            </div>
+            <div class="col-md-4">
+                <h5>T-Shirt</h5>
+                <p class="text-muted">$30.00</p>
+            </div>
+            <div class="col-md-3">
+                <input type="number" class="form-control quantity-input" value="1" min="1">
+            </div>
+            <div class="col-md-2">
+                <h5 class="total-price">$30.00</h5>
+            </div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-danger btn-sm">✖</button>
+            </div>
+        </div>
+
+        <!-- Cart Item 2 -->
+        <div class="row align-items-center border-bottom py-3">
+            <div class="col-md-2 text-center cart-item">
+                <img src="images/product4.png" alt="Product">
+            </div>
+            <div class="col-md-4">
+                <h5>SNEAKERS</h5>
+                <p class="text-muted">$45.00</p>
+            </div>
+            <div class="col-md-3">
+                <input type="number" class="form-control quantity-input" value="1" min="1">
+            </div>
+            <div class="col-md-2">
+                <h5 class="total-price">$45.00</h5>
+            </div>
+            <div class="col-md-1 text-center">
+                <button class="btn btn-danger btn-sm">✖</button>
+            </div>
+        </div>
+
+        <!-- Total & Checkout -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h5>Total Amount:</h5>
+            <h4 id="grand-total">$75.00</h4>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-warning btn-lg w-100">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white text-center py-2 mt-6">
+    <p>© 2025 Cloth Store. All rights reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
